@@ -1,0 +1,7 @@
+---
+hdfs_version: "2.5.0+cdh5.2.0+551-1.cdh5.2.0.p0.46~precise-cdh5.2.0"
+hdfs_conf_dir: "/etc/hadoop/conf"
+hdfs_namenode: False
+hdfs_namenode_host: localhost
+hdfs_namenode_port: 8020
+hdfs_disks: []
