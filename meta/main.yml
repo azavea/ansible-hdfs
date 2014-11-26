@@ -8,8 +8,9 @@ galaxy_info:
   platforms:
   - name: Ubuntu
     versions:
+    - trusty
     - precise
   categories:
   - system
 dependencies:
-  - { role: "azavea.java", java_version: "7u71-2.5.3-0ubuntu0.12.04.1" }
+  - { role: "azavea.java", java_version: "7u71-2.5.3-0ubuntu0.14.04.1" }

@@ -1,6 +1,6 @@
 # ansible-hdfs
 
-An Ansible role for installing [CDH HDFS](http://www.cloudera.com/content/cloudera/en/products-and-services/cdh.html).
+An Ansible role for installing [Cloudera HDFS](http://www.cloudera.com/content/cloudera/en/products-and-services/cdh.html).
 
 ## Role Variables
 
