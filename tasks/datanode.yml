@@ -16,9 +16,8 @@
 
 - name: Create Hadoop HDFS DataNode data directories
   file: path={{ item.mount_point }}
-        owner=hdfs
-        group=hdfs
         state=directory
+  register: existing_data_directory
   with_items: hdfs_disks
 
 - name: Check if device already has a file system
@@ -38,6 +37,7 @@
          src={{ item.device }}
          fstype=ext3
          state=mounted
+  when: existing_data_directory | changed
   with_items: hdfs_disks
 
 - name: Ensure Hadoop HDFS DataNode data directory permissions
