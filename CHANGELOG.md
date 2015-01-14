@@ -1,3 +1,7 @@
+## 0.3.0
+
+- Make configuration of properties in core, datanode, and namenode site file dynamic.
+
 ## 0.2.1
 
 - Avoid mounting devices that are already mounted.
