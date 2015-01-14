@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <configuration>
+{% for property in hdfs_namenode_properties -%}
   <property>
-    <name>dfs.permissions.superusergroup</name>
-    <value>hadoop</value>
+    <name>{{ property.name }}</name>
+    <value>{{ property.value }}</value>
   </property>
-  <property>
- 	<name>dfs.namenode.name.dir</name>
- 	<value>/media/persistent0</value>
- </property>
+{% endfor -%}
 </configuration>
