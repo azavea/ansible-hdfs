@@ -4,7 +4,7 @@ An Ansible role for installing [Cloudera HDFS](http://www.cloudera.com/content/c
 
 ## Role Variables
 
-- `hdfs_version` - HDFS version.
+- `hdfs_version` - HDFS version (default: `"2.5.0+cdh5.3.*"`)
 - `hdfs_conf_dir` - Configuration directory for HDFS (default: `/etc/hadoop/conf`)
 - `hdfs_namenode` - Flag to determine if a node is an HDFS NameNode (default: `False`)
 - `hdfs_namenode_host` - Hostname of the HDFS NameNode (default: `localhost`)
