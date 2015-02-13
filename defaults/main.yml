@@ -1,5 +1,5 @@
 ---
-hdfs_version: "2.5.0+cdh5.2.0+551-1.cdh5.2.0.p0.46~trusty-cdh5.2.0"
+hdfs_version: "2.5.0+cdh5.3.*"
 hdfs_conf_dir: "/etc/hadoop/conf"
 hdfs_namenode: False
 hdfs_namenode_host: localhost

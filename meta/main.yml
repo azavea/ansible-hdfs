@@ -4,7 +4,7 @@ galaxy_info:
   description: An Ansible role for installing CDH Hadoop.
   company: Azavea Inc.
   license: Apache
-  min_ansible_version: 1.2
+  min_ansible_version: 1.8
   platforms:
   - name: Ubuntu
     versions:
@@ -13,4 +13,4 @@ galaxy_info:
   categories:
   - system
 dependencies:
-  - { role: "azavea.java", java_version: "7u71-2.5.3-0ubuntu0.14.04.1" }
+  - { role: "azavea.java" }
