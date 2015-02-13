@@ -1,3 +1,12 @@
+## 0.4.1
+- Update CHANGELOG
+
+## 0.4.0
+
+- Update required version of ansible
+- Allow overrides for java version
+- Update version of HDFS installed
+
 ## 0.3.0
 
 - Make configuration of properties in core, datanode, and namenode site file dynamic.
