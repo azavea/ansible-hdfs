@@ -16,6 +16,9 @@
 
 - name: Create Hadoop HDFS DataNode data directories
   file: path={{ item.mount_point }}
+        owner=hdfs
+        group=hadoop
+        mode=0770
         state=directory
   register: existing_data_directory
   with_items: hdfs_disks
@@ -43,7 +46,8 @@
 - name: Ensure Hadoop HDFS DataNode data directory permissions
   file: path={{ item.mount_point }}
         owner=hdfs
-        group=hdfs
+        group=hadoop
+        mode=0770
         state=directory
   with_items: hdfs_disks
 
