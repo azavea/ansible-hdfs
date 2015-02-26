@@ -23,6 +23,7 @@
 - name: Check if device already has a file system
   command: blkid -c /dev/null -o value -s TYPE {{ item.device }}
   with_items: hdfs_disks
+  when: existing_data_directory | changed
   register: existing_filesystem
   changed_when: existing_filesystem.rc == 2
   failed_when: False
@@ -40,10 +41,10 @@
   when: existing_data_directory | changed
   with_items: hdfs_disks
 
-- name: Ensure Hadoop HDFS DataNode data directory permissions
+- name: Ensure Hadoop HDFS DataNode data directory ownership
   file: path={{ item.mount_point }}
         owner=hdfs
-        group=hdfs
+        group=hadoop
         state=directory
   with_items: hdfs_disks
 
