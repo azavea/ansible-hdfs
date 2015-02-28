@@ -1,4 +1,10 @@
+## 0.4.2
+
+- Repair datanode directory ownership and skip device mounting if data directory
+  exists.
+
 ## 0.4.1
+
 - Update CHANGELOG
 
 ## 0.4.0
